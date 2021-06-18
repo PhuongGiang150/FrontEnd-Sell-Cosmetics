@@ -1,0 +1,37 @@
+.product .viewDetail,
+.product .addToCart {
+    position: absolute;
+    left: 50%;
+    display: block;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 12px 0;
+    background-color: rgba(0, 0, 0, 0.15);
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--white-cl-1);
+    display: none;
+}
+
+.product .viewDetail {
+    top: 30%;
+    animation: btnDown linear 3s;
+}
+
+.product .addToCart {
+    animation: btnUp linear 3s;
+    top: 50%;
+}
+
+.product .viewDetail:hover,
+.product .addToCart:hover {
+    color: black;
+    transform: all 0.3s;
+    background-color: rgba(0, 0, 0, 0.05);
+    font-weight: 600;
+}
+
+.product:hover .viewDetail,
+.product:hover .addToCart {
+    display: block;
+}

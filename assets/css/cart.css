@@ -1,0 +1,142 @@
+.main__notify {
+    display: flex;
+    padding-top: 8px;
+}
+
+.main__notify-text {
+    font-size: 1.6rem;
+    color: rgb(27, 211, 27);
+}
+
+.main__notify-icon i {
+    font-size: 1.6rem;
+    color: rgb(27, 211, 27);
+    font-weight: 400;
+    margin-right: 8px;
+}
+
+.main__cart {
+    margin: 20px 0;
+    padding-right: 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main__pay {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.main__cart .row.title,
+.main__pay-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 60px;
+    line-height: 6rem;
+    align-items: center;
+    text-align: left;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+.main__cart .row.item {
+    height: 100px;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main__cart-product {
+    display: flex;
+    align-items: center;
+}
+
+.main__cart-product img {
+    width: 70px;
+    height: 70px;
+    margin-right: 12px;
+}
+
+.main__cart-product .name {
+    font-size: 1.5rem;
+    color: var(--black-cl-2);
+    line-height: 2rem;
+    height: calc(20px * 3);
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.main__cart .is-form {
+    width: 20px;
+    height: 25px;
+}
+
+.main__cart .input-qty {
+    height: 25px;
+    width: 30px;
+    font-size: 1.4rem;
+}
+
+.main__cart-price {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--default-cl);
+}
+
+.main__cart-icon i {
+    font-size: 2.4rem;
+    color: var(--black-cl-1);
+    cursor: pointer;
+}
+
+.main__cart-icon:hover {
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.main__cart .btn {
+    margin-top: 20px;
+}
+
+.main__pay .btn {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.pay-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main__pay-text {
+    font-size: 1.6rem;
+    color: var(--black-cl-2);
+    line-height: 2.4rem;
+}
+
+.main__pay-price {
+    font-size: 1.6rem;
+    color: var(--default-cl)
+}
+
+
+/* ===Reponsive=== */
+
+@media (max-width: 1023px) {
+    .main__cart {
+        border-right: none;
+        padding-right: none;
+    }
+    .main__pay {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1023px) {
+    .main {
+        padding: 0 8px;
+    }
+}

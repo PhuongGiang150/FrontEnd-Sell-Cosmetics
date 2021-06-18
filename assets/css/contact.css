@@ -1,0 +1,109 @@
+.main {
+    padding: 40px 0;
+}
+
+.main__breadcrumb {
+    margin-bottom: 20px;
+}
+
+.contact__wrap {
+    display: flex;
+    padding-left: 20px;
+}
+
+.contact__img img {
+    width: 120px;
+}
+
+.contact__info {
+    display: block;
+    margin-left: 20px;
+}
+
+.contact__info li {
+    display: flex;
+}
+
+.contact__link,
+.contact__text {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--black-cl-2);
+    margin-top: 12px;
+}
+
+.contact__link i,
+.contact__text i {
+    margin-right: 4px;
+}
+
+.contact__link :hover {
+    color: var(--default-cl);
+    transition: all 0.3s;
+}
+
+.about-us {
+    margin-top: 20px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.about-us__heading {
+    text-align: center;
+    flex: 0 0 100%;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: var(--default-cl);
+    margin-bottom: 16px;
+}
+
+.about-us>.form__group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.about-us>.form__group div {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.about-us input {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 8px 12px;
+    margin-bottom: 16px;
+    padding-left: 12px;
+}
+
+.about-us textarea {
+    width: 100%;
+    margin-bottom: 16px;
+    font-size: 1.6rem;
+    padding: 4px 12px;
+}
+
+.about-us .btn {
+    flex: 0 0 100%;
+    width: 200px;
+}
+
+@media (max-width: 1024px) {
+    .contact__wrap {
+        padding-left: 0;
+        margin-top: 40px;
+    }
+    .about-us {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 739px) {
+    .main {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
